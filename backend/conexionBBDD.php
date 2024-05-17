@@ -10,7 +10,7 @@ header("Allow: GET, POST, OPTIONS, PUT, DELETE");
 $servername = "localhost";
 $username = "root";
 $password = "root";
-$database = "gestion_modulos_profesionales";
+$database = "gestion_horario";
 
 
 // Crear conexión
@@ -24,8 +24,8 @@ if ($conn->connect_error) {
     die("Conexión fallida: " . $conn->connect_error);
 }
 
-// Consulta SQL para obtener los datos de la tabla módulos
-$sql = "SELECT * FROM modulos";
+// Consulta SQL para obtener los datos de la tabla horario
+$sql = "SELECT * FROM horario";
 
 // Ejecutar la consulta SQL
 $resultado = $conn->query($sql);
