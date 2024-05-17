@@ -12,7 +12,6 @@ $username = "root";
 $password = "root";
 $database = "gestion_horario";
 
-
 // Crear conexión
 $conn = new mysqli($servername, $username, $password, $database);
 
