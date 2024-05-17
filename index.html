@@ -46,7 +46,7 @@
 
                 // Renderizar el horario aquí...
                 const tablabody = document.querySelector('#horario tablabody');
-                horarios.forEach(horario => {
+                horario.forEach(horario => {
                     const row = document.createElement('tr');
                     row.innerHTML = `
                         <td>${horario.dia}</td>
