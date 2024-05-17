@@ -11,18 +11,18 @@ Vagrant.configure("2") do |config|
 
       # Instalación de los binarios de PHP, el driver mysqli y la extensión FPM para realizar peticiones de tipo RESTful
       
-      #Instalación de mysql server en el servidor virtual
+      # Instalación de mysql server en el servidor virtual
       sudo apt install mysql-server
 
-      #Selecciono el servicio web que quiero usar y lo instalo
+      # Selecciono el servicio web que quiero usar y lo instalo
       sudo apt update
 
       sudo apt install -y nginx
       
-      #Instalo los binarios de php y el driver de mysqli
+      # Instalo los binarios de php y el driver de mysqli
       sudo apt-get install php php-mysqli
 
-      #Extensión FPM para realizar peticiones de tipo RESTful
+      # Extensión FPM para realizar peticiones de tipo RESTful
       sudo apt-get install php7.0-fpm
 
       # Generar archivo SQL con los registros de los diferentes Módulos Profesionales
