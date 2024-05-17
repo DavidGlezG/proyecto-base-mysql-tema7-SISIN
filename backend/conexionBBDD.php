@@ -32,7 +32,7 @@ $resultado = $conn->query($sql);
 
 // Verificar si se encontraron resultados
 if ($resultado->num_rows > 0) {
-    // Crear un array para almacenar los datos de los módulos
+    // Crear un array para almacenar los datos del horario
     $data = array();
 
     // Recorrer los resultados y agregarlos al array de datos
